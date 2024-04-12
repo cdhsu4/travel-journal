@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-content-container{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    background-color: #F55A5A;
+    color: #FFFFFF;
+    font-weight: 500;
+    
+    padding-top: 1rem;
+    padding-bottom: 1.0rem;
+    margin-bottom: 2.5rem;
+}
+
+.header--image{
+    width: 24px;
+    height: 24px;
+}
+
+.header--title{
+    font-size: 15px;
+}
+
+.individual-trip-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.20rem solid #F5F5F5;
+}
+
+.fa-earth-americas{
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+/* ---Troubleshooting w/ Charles + Chris on the below commented section (Incomplete)
+.cropped-image{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.cropped-image img{
+    object-fit: fill;
+}
+*/
+
+/* --- Github Co-Pilot assistance below on using a <div> wrap container to encase, fit, and navigate the portion of img wanted to fill the <div> space --- */
+.cropped-image {
+    width: 400px;
+    height: 200px; 
+    padding-bottom: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.destination--image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/* ----------------------------------------------------------------- */
+
+.location-info{
+    display: flex;
+    align-items: center;
+}
+
+.location--marker{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.10rem;
+    display: inline;
+}
+
+.fa-location-dot{
+    color: #F55A5A;
+    font-size: 1.25rem;
+    margin-right: 0.50rem;
+}
+
+.location-info p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+.location-info a{
+    color: #918E9B;
+}
+
+.destination-info h2 {
+    margin-top: 0.50rem;
+}
+
+.trip--dates {
+    font-weight: bold;
+}
+
+.trip--description {
+    line-height: 1.35rem;
+}
